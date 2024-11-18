@@ -1,0 +1,21 @@
+Stack:
+1.The main method:
+       name → reference to string "Kevin".
+       list → a reference to an ArrayList object
+       times → the value is 10.
+2.The fill method:
+       collection → link to list.
+       str → reference to string "KevinKevin".
+       times → the value is 10.
+       shrunk → reference to the line "Kevin".
+3.The shrink method (temporarily during the call):
+       str → link to "KevinKevin".
+       chars → character array ['K', 'e','v', 'i', 'n'].
+
+Heap:
+1.String objects:
+       "Kevin" (from name).
+       "KevinKevin" (from name + name).
+       "Kevin" (from shrink).
+2.Object ArrayList (list):
+       Contains a reference to the line "Kevin" three times (through a loop in fill).
